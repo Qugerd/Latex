@@ -1,0 +1,67 @@
+\documentclass[14pt, titlepage,fleqn]{extarticle}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage[russian]{babel}
+
+\usepackage{titlepage}
+\usepackage[final]{pdfpages}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{float} 
+
+\usepackage{caption}
+
+
+\newcommand{\InsertGraf}[2]{
+	\begin{figure}[H]
+		\center{\includegraphics[width = 1\textwidth]{#1}}
+		\caption{#2}
+	\end{figure}
+}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\begin{document}
+	\selectlanguage{russian}
+	
+
+	\fefutitlepage{Б9119-02.03.01сцт}{Панченко Н.К.}{17}{мая}{22}
+	
+	
+	\newpage
+	
+	\tableofcontents   
+	\clearpage
+	\section*{Введение}
+	\addcontentsline{toc}{section}{Введение}
+	
+	
+	
+	\newpage
+	
+	
+
+\end{document}
