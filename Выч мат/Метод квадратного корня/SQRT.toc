@@ -1,0 +1,4 @@
+\babel@toc {russian}{}\relax 
+\babel@toc {russian}{}\relax 
+\contentsline {section}{Введение}{3}{}%
+\contentsline {section}{Метод квадратного корня}{4}{}%
