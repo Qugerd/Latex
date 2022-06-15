@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1655307234 "c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/Метод ричардсона/richard.tex" "richard.pdf" "richard" 1655307237
+["pdflatex"] 1655308860 "c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/Метод ричардсона/richard.tex" "richard.pdf" "richard" 1655308863
   "C:/Users/quger/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1652859603 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/quger/AppData/Local/MiKTeX/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1440.pk" 1649844029 36852 ecc3df285b23febb983c97228281230c ""
   "C:/Users/quger/AppData/Local/MiKTeX/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx2074.pk" 1649844030 54480 e43008d573bcfcdc4eddf7968a4b155a ""
@@ -89,11 +89,12 @@
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1636284872 56029 3f7889dab51d620aa43177c391b7b190 ""
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1623005690 4902 efb3d66683a2da2a232f71e3a571a899 ""
-  "c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/Метод ричардсона/richard.tex" 1655307231 2130 6c6aa372ba02ea4a0a4ed8ef11013fc2 ""
+  "Screenshot_1.png" 1655308841 13836 8b76a98324bf6c89277fa49b11272ccd ""
+  "c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/Метод ричардсона/richard.tex" 1655308860 2542 3b977cf2134870cb8ca23eb09eaa96f9 ""
   "fefulogo.pdf" 1648875809 7568 a26cf6e41b55d9f4ca7b0666321af6b6 ""
-  "richard.aux" 1655307236 384 e174b8b8eeb179777ce7abe87b054977 "pdflatex"
-  "richard.tex" 1655307231 2130 6c6aa372ba02ea4a0a4ed8ef11013fc2 ""
-  "richard.toc" 1655307236 171 e6bb0b3d42b9abdbfb9f5549fa4cf434 "pdflatex"
+  "richard.aux" 1655308862 384 5178c92e274cc4d448dab60e1cb0cef3 "pdflatex"
+  "richard.tex" 1655308860 2542 3b977cf2134870cb8ca23eb09eaa96f9 ""
+  "richard.toc" 1655308862 171 e6bb0b3d42b9abdbfb9f5549fa4cf434 "pdflatex"
   "titlepage.sty" 1654130533 2174 5f717cb74a30df30883f4f75e7a31e4e ""
   (generated)
   "richard.aux"
