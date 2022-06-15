@@ -35,7 +35,7 @@ def solveTriangular(matrix, y):
         for j in range(i):
             y[n - 1 - i] -= matrix[n - 1 - i][n - 1 - j] * x[n - 1 - j]
         x[n - 1 - i] = y[n - 1 - i] / matrix[n - 1 - i][n - 1 - i]
-
+    print(x)
     return x
 
 
