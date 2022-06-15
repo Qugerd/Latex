@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.15)  2 JUN 2022 10:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.5.15)  15 JUN 2022 20:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/laba.tex"
-(c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/laba.tex
+**"c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/Метод ричардсона/laba.tex"
+(c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/Метод ричардсона/laba.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-04-29> (C:\Users\quger\AppData\Local\Programs\MiKTeX\tex/latex/extsizes\extarticle.cls
 Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
@@ -666,19 +666,19 @@ Package pdftex.def Info: fefulogo.pdf  used on input line 51.
 
  [2] [3
 
-] (laba.aux) ) 
+] [4] (laba.aux) ) 
 Here is how much of TeX's memory you used:
- 10001 strings out of 478619
- 167330 string characters out of 2843245
+ 10005 strings out of 478619
+ 167670 string characters out of 2843245
  652956 words of memory out of 3000000
- 28014 multiletter control sequences out of 15000+600000
+ 28018 multiletter control sequences out of 15000+600000
  479672 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,9n,117p,294b,261s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\quger\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\quger\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1000.pk> <C:\Users\quger\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\quger\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\quger\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\quger\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm0900.pk>
-Output written on laba.pdf (3 pages, 66851 bytes).
+ 70i,9n,117p,326b,261s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\quger\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx2074.pk> <C:\Users\quger\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1000.pk> <C:\Users\quger\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\quger\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\quger\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1000.pk> <C:\Users\quger\AppData\Local\MiKTeX\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm0900.pk><C:/Users/quger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/quger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/quger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/quger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/quger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/quger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on laba.pdf (4 pages, 136938 bytes).
 PDF statistics:
- 224 PDF objects out of 1000 (max. 8388607)
+ 287 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

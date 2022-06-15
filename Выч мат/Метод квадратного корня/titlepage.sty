@@ -1,0 +1,85 @@
+\RequirePackage[russian]{babel}
+\RequirePackage{graphicx}
+\RequirePackage{multicol}
+\RequirePackage{amsmath}
+\usepackage{listings}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{adjustbox}
+
+\newcommand{\fefutitlepage}[5]{
+	{
+
+		{
+
+			\parindent 0pt
+			\thispagestyle{empty}
+			
+			\begin{center}
+				
+				\includegraphics[scale=0.2]{fefulogo.pdf}
+				
+				{\fontsize{9}{9} \selectfont МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ}
+				
+				{\fontsize{10}{10} \selectfont Федеральное государственное автономное образовательное учреждение высшего образования}
+				
+				\textbf{<<Дальневосточный федеральный университет>>}
+				
+				\textbf{(ДВФУ)}
+	
+				{
+					\parindent 0pt
+					\rule{\textwidth}{3pt}
+					
+					\vspace{\dimexpr-\baselineskip + 1mm - 1pt}
+					
+					\rule{\textwidth}{1pt}
+				}
+				
+				\textbf{ШКОЛА ЕСТЕСТВЕННЫХ НАУК}
+				
+				\vspace{10pt}
+				
+				\textbf{Департамент информатики, математического и\linebreak компьютерного моделирования}
+				
+				\vspace{30pt}
+				
+				\textbf{ОТЧЕТ}
+				
+				\vspace{12pt}
+				{по лабораторной работе  \\
+					по дисциплине <<Вычислительная математика>>}
+				
+			\end{center}
+			
+			\vspace{10pt}
+			
+			\begin{multicols}{2}
+				
+				\vfill\null
+				
+				\columnbreak
+				
+				Выполнил студент \newline гр. #1
+				
+				$\underset{\textit{(ФИО)}}{\underline{\text{#2}\vphantom{lp}}}$
+				$\underset{\textit{(подпись)}}{\underline{\hspace{60pt}\vphantom{lp}}}$
+				
+				\vspace{10pt}
+				
+				<<\underline{#3\vphantom{lp}}>> \underline{#4\vphantom{lp}}\hspace{2pt} 20\underline{#5\vphantom{lp}} г.
+				
+			\end{multicols}
+			
+			\vspace{75pt}
+
+			\begin{center}
+				\textbf{г. Владивосток \linebreak 20#5}
+			\end{center}
+
+			
+		}
+	}
+	\pagebreak
+	
+}
