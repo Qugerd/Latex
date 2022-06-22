@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1655308432 "c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/Метод квадратного корня/SQRT.tex" "SQRT.pdf" "SQRT" 1655308434
+["pdflatex"] 1655892176 "c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/Метод квадратного корня/SQRT.tex" "SQRT.pdf" "SQRT" 1655892177
   "C:/Users/quger/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1652859603 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/quger/AppData/Local/MiKTeX/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1440.pk" 1649844029 36852 ecc3df285b23febb983c97228281230c ""
   "C:/Users/quger/AppData/Local/MiKTeX/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx2074.pk" 1649844030 54480 e43008d573bcfcdc4eddf7968a4b155a ""
@@ -89,11 +89,12 @@
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1636284872 56029 3f7889dab51d620aa43177c391b7b190 ""
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1623005690 4902 efb3d66683a2da2a232f71e3a571a899 ""
-  "SQRT.aux" 1655308434 397 78899143ff3f46fd399015ddad5c63e3 "pdflatex"
-  "SQRT.tex" 1655308431 3516 26bc810a4e75094416f98b9eb1fd6831 ""
-  "SQRT.toc" 1655308434 184 f064933dc0d47499b8612718c8187800 "pdflatex"
-  "Screenshot_1.png" 1655308396 6615 e182c03b06dfc936aa01be7be6ec4e98 ""
-  "c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/Метод квадратного корня/SQRT.tex" 1655308431 3516 26bc810a4e75094416f98b9eb1fd6831 ""
+  "SQRT.aux" 1655892177 397 39019bf8f4ea06d577f33f25344e34e0 "pdflatex"
+  "SQRT.tex" 1655892175 3813 dee902daf2e880104b8a46ff0170cf81 ""
+  "SQRT.toc" 1655892177 184 f064933dc0d47499b8612718c8187800 "pdflatex"
+  "Screenshot_1.png" 1655892023 702 cbb365964076c4ca46c26a85784dca22 ""
+  "Screenshot_2.png" 1655892111 1612 502bf5b3734b211fed38ef16f034ef49 ""
+  "c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/Метод квадратного корня/SQRT.tex" 1655892175 3813 dee902daf2e880104b8a46ff0170cf81 ""
   "fefulogo.pdf" 1648875809 7568 a26cf6e41b55d9f4ca7b0666321af6b6 ""
   "titlepage.sty" 1654130533 2174 5f717cb74a30df30883f4f75e7a31e4e ""
   (generated)
