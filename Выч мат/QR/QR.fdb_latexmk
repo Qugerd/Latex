@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1655899652 "c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/QR/QR.tex" "QR.pdf" "QR" 1655899653
+["pdflatex"] 1655904289 "c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/QR/QR.tex" "QR.pdf" "QR" 1655904290
   "C:/Users/quger/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1652859603 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/quger/AppData/Local/MiKTeX/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1440.pk" 1649844029 36852 ecc3df285b23febb983c97228281230c ""
   "C:/Users/quger/AppData/Local/MiKTeX/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx2074.pk" 1649844030 54480 e43008d573bcfcdc4eddf7968a4b155a ""
@@ -89,10 +89,11 @@
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1636284872 56029 3f7889dab51d620aa43177c391b7b190 ""
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1623005690 4902 efb3d66683a2da2a232f71e3a571a899 ""
-  "QR.aux" 1655899653 366 c008afea8523065e9af7dd046c4e510f "pdflatex"
-  "QR.tex" 1655899651 4701 5c4b1fd9698923e1347646d55bcb2112 ""
-  "QR.toc" 1655899653 153 b0829e87d21725a637744d6cd966853d "pdflatex"
-  "c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/QR/QR.tex" 1655899651 4701 5c4b1fd9698923e1347646d55bcb2112 ""
+  "QR.aux" 1655904290 366 c008afea8523065e9af7dd046c4e510f "pdflatex"
+  "QR.tex" 1655904288 5403 c3f71b9ba93be190929bbfe3a3def4d0 ""
+  "QR.toc" 1655904290 153 b0829e87d21725a637744d6cd966853d "pdflatex"
+  "Screenshot_2.png" 1655904276 6460 f2635cd81b468dd44a634bbf827bcee9 ""
+  "c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/QR/QR.tex" 1655904288 5403 c3f71b9ba93be190929bbfe3a3def4d0 ""
   "fefulogo.pdf" 1648875809 7568 a26cf6e41b55d9f4ca7b0666321af6b6 ""
   "titlepage.sty" 1654130533 2174 5f717cb74a30df30883f4f75e7a31e4e ""
   (generated)

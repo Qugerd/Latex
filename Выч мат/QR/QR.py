@@ -1,118 +1,90 @@
-from matrix import *
+import math
 import numpy as np
-import numpy.linalg
+from numpy.linalg import solve
+
+np.set_printoptions(linewidth=1000)
+np.set_printoptions(precision=4, floatmode='fixed')
 
 
-# QR_START________________________________
+def Tau(a):
+    if a >= 0:
+        return 1
+    else:
+        return -1
 
-# РєР°Рє sign С‚РѕР»СЊРєРѕ РІ 0 РІРѕР·РІСЂР°С‰Р°РµС‚ 1
-def deta(a):
-    return -1 if a < 0 else 1
+matrix = matrix1 = [[2.2, 4, -3, 1.5, 0.6, 2, 0.7],
+        [4, 3.2, 1.5, -0.7, -0.8, 3, 1],
+        [-3, 1.5, 1.8, 0.9, 3, 2, 2],
+        [1.5, -0.7, 0.9, 2.2, 4, 3, 1],
+        [0.6, -0.8, 3, 4, 3.2, 0.6, 0.7],
+        [2, 3, 2, 3, 0.6, 2.2, 4],
+        [0.7, 1, 2, 1, 0.7, 4, 3.2]]
 
-
-# РЎРѕР·РґР°РЅРёРµ
-def generate_P(p):
-    I = ones(len(p))
-    # print(I)
-    newp = [p]
-    a = -2 / dot(p)[0][0]
-    m = dot(transpose(newp), newp)
-    P = mul(m, a)
-    P = plus(I, P)
-    return P
+b = b1 = [3.2, 4.3, 0.1, 3.5, 5.3, 9, 3.7]
 
 
-def qr_razloj(matrix):
-    if (len(matrix) != len(matrix[0])):
-        return None
-    r = [m[:] for m in matrix]
-    n = len(r)
-    q = ones(len(matrix))
+n = int(len(matrix))
+matrix = np.array(matrix)
 
-    for k in range(0, len(r) - 1):
-        
-        p = [0] * len(r)
-        
-        akk = (sum([r[l][k] ** 2 for l in range(k, n)])) ** 0.5
+for k in range(n):
+    p = np.zeros(n)
+    sum = 0
 
-        p[k] = r[k][k] + deta(akk) * akk
+    for l in range(k, n):
+        sum += matrix[l][k] ** 2
+    p[k] = matrix[k][k] + Tau(matrix[k][k]) * (sum ** (1/2))
 
-        for i in range(k + 1, n):
-            p[i] = r[i][k]
+    for l in range(k + 1, n):
+        p[l] = matrix[l][k]
 
-        q = dot(q, generate_P(p))
-        pp = sum([p[i] ** 2 for i in range(k, n)])
-        for j in range(k, n):
-            px = sum([p[l] * r[l][j] for l in range(0, n)])
-            for i in range(k, n):
-                r[i][j] -= 2 * p[i] / pp * px
+    new_matrix = np.zeros(shape=(n,n))
+    new_matrix[:k][:] = matrix[:k][:]
+    f = np.zeros(n)
 
-    return [q, r]
+    for i in range(k,n):
+        sum = 0
+        for l in range(k, n):
+             sum += matrix[l][k] ** 2
 
+        new_matrix[k][k] = -Tau(matrix[k][k]) * (sum ** (1 / 2))
+        for j in range(k + 1, n):
+            sum1 = 0
+            for l in range(k, n):
+                sum1 += p[l] * matrix[l][j]
 
-# QR_END__________________________________
+            sum2 = 0
+            for l in range(k, n):
+                sum2 += p[l] ** 2
+            new_matrix[i][j] = matrix[i][j] - 2 * p[i] * (sum1) / (sum2)
 
+    for i in range(n):
+        sum1 = 0
+        for l in range(k, n):
+            sum1 += p[l] * b[l]
 
+        sum2 = 0
+        for l in range(k, n):
+            sum2 += p[l] ** 2
+        f[i] = b[i] - 2 * p[i] * (sum1) / (sum2)
 
-
-# HOUSEHOLDER_START_______________________
-
-def hessel_rot(matrix):
-    matrix = [r[:] for r in matrix]
-
-    for j in range(len(matrix)):
-        for i in range(j + 2, len(matrix)):
-            if (j > len(matrix) - i + 1):
-                break
-
-            c = matrix[j + 1][j] / (matrix[j + 1][j] ** 2 + matrix[i][j] ** 2) ** 0.5
-            s = matrix[i][j] / (matrix[j + 1][j] ** 2 + matrix[i][j] ** 2) ** 0.5
-
-            T = ones(len(matrix))
-
-            T[i][i] = c
-            T[j + 1][j + 1] = c
-            T[i][j + 1] = s
-            T[j + 1][i] = -s
-
-            matrix = dot(dot(transpose(T), matrix), T)
-    return matrix
+    matrix = new_matrix
+    b = f
 
 
-# HOUSEHOLDER_END_________________________
+x = np.zeros(n)
+for i in range(n - 1, -1, -1):
+    sum = 0
+    for j in range(n):
+        sum += x[j] * matrix[i][j]
+    x[i] = (b[i] - sum) / matrix[i][i]
 
+print("Результат QR:", x)
 
-# QR----------------------------------------
-def find_self_qr(A, eps=1e-6):
-    qrA = [r[:] for r in hessel_rot(A)]
-    counter = 0
-    old_self_qr = [np.inf] * len(qrA)
-    qr_self = [qrA[i][i] for i in range(len(qrA))]
+temp = solve(matrix1, b1)
+print("Точное решение:", temp)
 
-    while (vector_norm_1(plus(old_self_qr, mul(qr_self, -1))) > eps):
-        counter += 1
-        old_self_qr = qr_self[:]
-        Q, R = qr_razloj(qrA)
-        qrA = dot(R, Q)
-        qr_self = [qrA[i][i] for i in range(len(qrA))]
-
-    qr_self.sort()
-    qr_self.reverse()
-    print("Iters", counter)
-
-    return qr_self
-
-
-
-
-# MAIN--------------------------------------
-temp_arr = numpy.linalg.eig(A)[0].tolist()
-temp_arr.sort()
-temp_arr.reverse()
-print(temp_arr)
-
-print("QR")
-qr_self = find_self_qr(A)
-print("delta qr", [abs(temp_arr[i] - qr_self[i]) for i in range(len(qr_self))])
-
-
+print("Разница:")
+diff = []
+for i in range(n):
+    diff.append(math.fabs(temp[i] - x[i].real))
+print(diff)
