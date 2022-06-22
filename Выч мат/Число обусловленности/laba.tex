@@ -1,0 +1,113 @@
+\documentclass[14pt, titlepage,fleqn]{extarticle}
+\usepackage[T1,T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+\usepackage[russian]{babel}
+
+\usepackage{titlepage}
+\usepackage[final]{pdfpages}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{float} 
+
+\usepackage{caption}
+
+
+\newcommand{\InsertGraf}[2]{
+	\begin{figure}[H]
+		\center{\includegraphics[width = 1\textwidth]{#1}}
+		\caption{#2}
+	\end{figure}
+}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+
+\lstset{frame=tb,
+	language=Python,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
+}
+
+\begin{document}
+	\selectlanguage{russian}
+	
+
+	\fefutitlepage{Б9119-02.03.01сцт}{Панченко Н.К.}{02}{июня}{22}
+	
+	
+	\newpage
+	
+	\tableofcontents   
+	\clearpage
+	\section*{Введение}
+	\addcontentsline{toc}{section}{Введение}
+	Отчёт по лабораторной работе на тему <<Число обусловленности>>.	
+	\newpage
+
+
+
+
+
+
+
+
+
+	\section*{Число обусловленности}
+	\addcontentsline{toc}{section}{Число обусловленности}
+	Вычислить число обусловленности системы:
+	\[\begin{cases}
+		2x + y = 2\\
+		(2-\varepsilon)x+y=1
+	\end{cases}\]
+	\section*{Решение}
+	\[\begin{cases}
+		y = 2- 2x\\
+		2x- \varepsilon x + 2 -2x = 1
+	\end{cases}\]
+\[\varepsilon x = 1~~~ x = \dfrac{1}{\varepsilon}~~~y = 2 - \dfrac{2}{\varepsilon}\]
+	\[||A||_1 = 2 + |2-\varepsilon|\]
+	\[|A| = 2 -2 + \varepsilon = \varepsilon\]
+	\[M = \begin{pmatrix}
+		1 & -1\\
+		-2+\varepsilon & 2
+	\end{pmatrix}\]
+	\[A^{-1} = \dfrac{1}{\varepsilon}\begin{pmatrix}
+		1 & -1\\
+		\varepsilon - 2 & 2
+	\end{pmatrix}\]
+	\[||A^{-1}||_1 = \begin{cases}
+		\dfrac{3}{\varepsilon}, \varepsilon \leq 4\\
+		\dfrac{-1 + \varepsilon}{\varepsilon}, \varepsilon > 4\varepsilon 
+	\end{cases}\]
+	\[\mu (A) = \begin{cases}
+		\dfrac{6+3|2-\varepsilon|}{\varepsilon}, \varepsilon \leq \\
+		\dfrac{(2+|2-\varepsilon|)(-1+\varepsilon)}{\varepsilon}, \varepsilon>4
+	\end{cases}\]
+
+\[\mu = \dfrac{6+3|2+\varepsilon|}{\varepsilon} = \begin{cases}
+	\dfrac{2-3\varepsilon}{\varepsilon}, \varepsilon \leq 2\\
+	3, \varepsilon > 2
+\end{cases}\]
+\[\dfrac{(-1+\varepsilon)(2+|2-\varepsilon|)}{\varepsilon} = (-1 + \varepsilon)\]
+\[\mu(A) = \begin{cases}
+	\dfrac{12 - 3\varepsilon}{\varepsilon}, \varepsilon \leq 2\\
+	3, 2<\varepsilon \leq 4\\
+	\varepsilon - 1,\varepsilon > 4.
+\end{cases}\]
+\end{document}
