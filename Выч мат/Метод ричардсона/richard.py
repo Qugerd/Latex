@@ -2,13 +2,13 @@ import math
 import numpy as np
 from numpy import linalg as la
 
-EPS = 10 ** -2
+EPS = 10 ** -6
 n=5
 
 a = np.array([[16, 2, 0, -2],
                 [4, 20, 1, 0],
                 [2, 0, 10, 0],
-                [-4, 0, 4, 32]], float)
+                [-2, 0, 4, 32]], float)
 
 
 b = np.array([13, 24, 7, 0], float)
@@ -33,5 +33,6 @@ def richardson(matrix, vector, maxSelf, minSelf, n):
     return x
 
 ls = la.eig(a)[0]
+print(ls)
 min, max = ls.min(), ls.max()
 richardson(a, b, max, min, n)

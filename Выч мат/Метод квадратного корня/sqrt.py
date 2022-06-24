@@ -12,8 +12,10 @@ def createS(matrix):
         matrixS[i][i] = sqrt(matrix[i][i] - sum((matrixS[k][i]) ** 2 for k in range(i)))
         for j in range(i, size):
             matrixS[i][j] = (matrix[i][j] - sum((matrixS[k][i] * matrixS[k][j]) for k in range(i))) / matrixS[i][i]
-
+            
+    print(matrixS)
     return matrixS
+
 
 
 def getAnsver(s, v):

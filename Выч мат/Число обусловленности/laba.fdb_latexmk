@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1655907640 "c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/Число обусловленности/laba.tex" "laba.pdf" "laba" 1655907641
+["pdflatex"] 1655954463 "c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/Число обусловленности/laba.tex" "laba.pdf" "laba" 1655954466
   "C:/Users/quger/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1652859603 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/quger/AppData/Local/MiKTeX/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1440.pk" 1649844029 36852 ecc3df285b23febb983c97228281230c ""
   "C:/Users/quger/AppData/Local/MiKTeX/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx2074.pk" 1649844030 54480 e43008d573bcfcdc4eddf7968a4b155a ""
@@ -17,7 +17,7 @@
   "C:/Users/quger/AppData/Local/MiKTeX/fonts/tfm/lh/lh-t2a/lati0700.tfm" 1652598371 3528 15a6f610d0057e691178d31f3f277358 ""
   "C:/Users/quger/AppData/Local/MiKTeX/fonts/tfm/lh/lh-t2a/lati1000.tfm" 1652598370 3528 defd551e32c4af414f9b54b8101bfa9b ""
   "C:/Users/quger/AppData/Local/MiKTeX/fonts/tfm/lh/lh-t2a/lati1440.tfm" 1652598368 3528 460e6901416a816cf4afa844b5d54101 ""
-  "C:/Users/quger/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1652598362 10251076 3d9473b5db1bf65925e7f7756f6ec228 ""
+  "C:/Users/quger/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1655950743 10251076 098d48b1d92da687c63edb08972c742b ""
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/fonts/tfm/jknappen/ec/ecrm1440.tfm" 993062128 3168 3bd7b08ba4330af81521911744311212 ""
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmex10.tfm" 1136765053 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
@@ -25,6 +25,7 @@
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmsy10.tfm" 1136765053 1124 6c73e740cf17375f03eec0ee63599741 ""
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
+  "C:/Users/quger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1247596667 36741 0ee9e374ec3e30da87cdfb0ea3575226 ""
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
@@ -88,11 +89,11 @@
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1636284872 56029 3f7889dab51d620aa43177c391b7b190 ""
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1623005690 4902 efb3d66683a2da2a232f71e3a571a899 ""
-  "c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/Число обусловленности/laba.tex" 1655907638 2877 0f8275423c79a599968d32c055b73723 ""
+  "c:/Users/quger/OneDrive/Desktop/Latex/Выч мат/Число обусловленности/laba.tex" 1655954462 11034 1f49b354a1086df0ec0e8aed1e393873 ""
   "fefulogo.pdf" 1648875809 7568 a26cf6e41b55d9f4ca7b0666321af6b6 ""
-  "laba.aux" 1655907640 394 eb9ea459aad859be73ba24b291a1fd94 "pdflatex"
-  "laba.tex" 1655907638 2877 0f8275423c79a599968d32c055b73723 ""
-  "laba.toc" 1655907640 181 a3cfb7c027e99346848c5b184507fd74 "pdflatex"
+  "laba.aux" 1655954465 394 674612f068a70fd4e20add74ac8d161f "pdflatex"
+  "laba.tex" 1655954462 11034 1f49b354a1086df0ec0e8aed1e393873 ""
+  "laba.toc" 1655954465 181 a3cfb7c027e99346848c5b184507fd74 "pdflatex"
   "titlepage.sty" 1655904641 2166 1a3b8bb4e90e1c6958ff4d004e872d67 ""
   (generated)
   "laba.aux"

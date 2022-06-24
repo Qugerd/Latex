@@ -68,6 +68,7 @@ for k in range(n):
         f[i] = b[i] - 2 * p[i] * (sum1) / (sum2)
 
     matrix = new_matrix
+    print(matrix)
     b = f
 
 

@@ -1,0 +1,135 @@
+\documentclass[titlepage, 14pt, a4paper]{extarticle}
+
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{dvfu_titul_page}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{dsfont}
+        
+\pagestyle{plain}
+
+\begin{document}
+
+    \fefupage
+    
+    
+    
+    \tableofcontents
+    \pagebreak
+
+    \section*{Постановка задачи}
+	\addcontentsline{toc}{subsection}{Постановка задачи}
+	    Дана система уравнений. Требуется найти её решение, число обусловленноти и зависимость от $\epsilon$.
+	    \begin{equation*}
+        \left\{
+            \begin{array}{lr}
+                2x + y = 2\\
+                (2 - \epsilon)x + y = 1
+            \end{array}
+        \right.
+        \end{equation*}
+	    
+	\section*{Метод решения}
+	\addcontentsline{toc}{subsection}{Метод решения}
+	 
+	    \textbf{Решением} системы уравнений называется упорядоченный набор чисел, при подстановке которых вместо переменных каждое из уравнений обращается в верное равенство.\\
+	    \textbf{Число обусловленности}, будем обозначать как $ cord(A)$, является мерой чувствительности системы линейных уравнений, определяемой матрицей неизвестных, к погрешностям задания вектора правых частей уравнений. Чем больше число обусловленности, тем сильнее это воздействие и тем более неустойчив процесс нахождения решения линейной системы.\\
+	    \textbf{Нормой} является $x \in X$, $||x||$ если справедливо следующее:\\
+	    1) $||x|| \geqslant 0$, $ \forall x $; $ ||x|| = 0 \Leftrightarrow x = 0 $ \\
+	    2) $ ||\lambda x|| = |\lambda| \cdot ||x|| $, $ \forall x \in X $, $ \forall \lambda \in \mathds{R} $ \\
+	    3) $ ||x + y|| \leqslant ||x|| + ||y|| $, $ \forall x, y \in X $
+        
+    \section*{Алгоритм метода}
+	\addcontentsline{toc}{subsection}{Алгоритм метода}
+	
+	    Формула вычисления \textbf{числа обусловленности}:\\
+	    $ \displaystyle \mu(A) = \sup \left( \dfrac{||\Delta y|| / ||y||}{||\Delta x|| / ||x||} \right) $\\
+	    Формулы вычисления \textbf{матричной нормы}:\\
+	    $ \displaystyle ||A||_{1} = max_{j} \sum_{i = 1}^{n} |a_{ij}| $\\
+	    $ \displaystyle ||A||_{2} = \sqrt{max_{i} \lambda_{i} (A \times A)} $\\
+	    $ \displaystyle ||A||_{\infty} = max_{i} \sum_{j = 1}^{n} |a_{ij}| $
+	
+	\section*{Спецификация}
+	\addcontentsline{toc}{subsection}{Спецификация}
+	
+	    Найти зависимость при:
+	    $\epsilon \rightarrow \infty, $
+	    $\epsilon \rightarrow 0 $.
+	    
+	\section*{Решение}
+	\addcontentsline{toc}{subsection}{Решение}
+	
+	    Для начала \textbf{решим} данную систему уравнений:
+	    \[ y = 2 - 2x \]
+	    \[ (2 - \epsilon)x + 2 - 2x = 1 \]
+	    \[ (2 - \epsilon - 2)x = 1 - 2 \]
+	    \[ -\epsilon x = -1 \]
+	    \begin{equation*}
+        \left\{
+            \begin{array}{lr}
+                x = \dfrac{1}{\epsilon}\\
+	            y = 2 - \dfrac{2}{\epsilon}
+            \end{array}
+        \right.
+        \end{equation*}
+        Из полученных результатов вычисления видна следующая \textbf{зависимость} от $\epsilon$:\\
+        $\epsilon \rightarrow \infty; \,\, (x, y) \rightarrow (0, 2) $,\\
+	    $\epsilon \rightarrow 0; \,\, (x, y) \rightarrow (+ \infty, - \infty) $.\\
+	    Найдём \textbf{число обусловненности}:\\
+	    \begin{equation*}
+        \left\{
+            \begin{array}{lr}
+                2x + y = 2\\
+                (2 - \epsilon)x + y = 1
+            \end{array}
+        \right.
+        \end{equation*}
+            \begin{equation*}
+                A =
+                \begin{pmatrix}
+                2 & 1\\
+                2 - \epsilon & 1
+                \end{pmatrix}
+        \end{equation*}
+        Число обучсовленности в евклидовой норме:\\
+        \[ cord(A) = ||A|| \cdot ||A^{-1}|| \]
+        Воспользуемся матричной нормой $ ||A||_{1} $:\\
+        \[ ||A||_{1} = max_{j} \sum_{i = 1}^{n} |a_{ij}|\]
+        \[ A^{-1} = \dfrac{1}{|A|} \cdot A^{T} = \dfrac{1}{\epsilon} \begin{pmatrix}
+                1 & -1\\
+                -2 + \epsilon & 2
+                \end{pmatrix} \]
+        \[ ||A|| = max(2 + |2 - \epsilon|, 2) = 2 + |2 - \epsilon| \]
+        \[ ||A|| = \dfrac{1}{\epsilon} max(1 + |\epsilon - 2|, 3) = \left\{
+            \begin{array}{lr}
+                1 + |\epsilon - 2|, \epsilon > 4\\
+                3, 0 < \epsilon < 4
+            \end{array}
+        \right. \]
+	    \[1) \,\,\, cord(A) = 3 \cdot \dfrac{2 + 2 - \epsilon}{\epsilon} = \dfrac{12}{\epsilon} - 3, \,\,\, 0 < \epsilon < 2 \]
+	    \[ 2) \,\,\, cord(A) = 3 \cdot \dfrac{2 - 2 + \epsilon}{\epsilon} =  3, \,\,\, 2 \leqslant \epsilon < 4 \]
+	    \[ 3) \,\,\, cord(A) = \dfrac{1}{\epsilon} (2 + 2 - \epsilon) (1 + \epsilon - 2) = \epsilon - 1, \,\,\, 4 \leqslant \epsilon < \infty \]
+	    \[ cord(A) \geqslant 3 \]
+	    
+	\section*{Результат}
+	\addcontentsline{toc}{subsection}{Результат}
+	    Решение системы:\\
+	    \begin{equation*}
+        \left\{
+            \begin{array}{lr}
+                x = \dfrac{1}{\epsilon}\\
+	            y = 2 - \dfrac{2}{\epsilon}
+            \end{array}
+        \right.
+        \end{equation*}
+	    Зависимость от $\epsilon$:\\
+	    $ \epsilon \rightarrow \infty; \,\, (x, y) \rightarrow (0, 2) $,\\
+	    $ \epsilon \rightarrow 0; \,\, (x, y) \rightarrow (+ \infty, - \infty) $,\\
+	    число обусловленноти: $ cord(A) \geqslant 3 $.
+	    
+	    
+	 
+\end{document}
