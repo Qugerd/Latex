@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1656431191 "c:/Users/quger/OneDrive/Desktop/Latex/Лабы оптимизация/Лаба 1/laba1.tex" "laba1.pdf" "laba1" 1656431192
+["pdflatex"] 1656431884 "c:/Users/quger/OneDrive/Desktop/Latex/Лабы оптимизация/Лаба 2/laba2.tex" "laba2.pdf" "laba2" 1656431886
   "C:/Users/quger/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1652859603 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/quger/AppData/Local/MiKTeX/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx1440.pk" 1649844029 36852 ecc3df285b23febb983c97228281230c ""
   "C:/Users/quger/AppData/Local/MiKTeX/fonts/pk/ljfour/lh/lh-t2a/dpi600/labx2074.pk" 1649844030 54480 e43008d573bcfcdc4eddf7968a4b155a ""
@@ -93,13 +93,13 @@
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/tex/latex/varwidth/varwidth.sty" 1238469540 10894 d359a13923460b2a73d4312d613554c8 ""
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1636284872 56029 3f7889dab51d620aa43177c391b7b190 ""
   "C:/Users/quger/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1623005690 4902 efb3d66683a2da2a232f71e3a571a899 ""
-  "c:/Users/quger/OneDrive/Desktop/Latex/Лабы оптимизация/Лаба 1/laba1.tex" 1656431190 7022 9a9ac272005e0738ec413bbc27397930 ""
+  "c:/Users/quger/OneDrive/Desktop/Latex/Лабы оптимизация/Лаба 2/laba2.tex" 1656431884 9734 a0112f27101096f3ec1cd3925c57db60 ""
   "fefulogo.pdf" 1648875809 7568 a26cf6e41b55d9f4ca7b0666321af6b6 ""
-  "laba1.aux" 1656431192 191 722b9620b8030bca5d56a63502464a00 "pdflatex"
-  "laba1.tex" 1656431190 7022 9a9ac272005e0738ec413bbc27397930 ""
-  "lb1.png" 1656431115 41521 b4ef112c570e987043f8e4d45da28cd5 ""
+  "laba2.aux" 1656431885 191 9477b185f1645da8a31341d6eb82897d "pdflatex"
+  "laba2.tex" 1656431884 9734 a0112f27101096f3ec1cd3925c57db60 ""
+  "lb2.png" 1656431864 17386 06ae3578b2418eba060f935a91367ac2 ""
   "titlepage.sty" 1656314160 2152 b6cc7683b52d32f834a38da286f3ae0a ""
   (generated)
-  "laba1.aux"
-  "laba1.log"
-  "laba1.pdf"
+  "laba2.aux"
+  "laba2.log"
+  "laba2.pdf"
